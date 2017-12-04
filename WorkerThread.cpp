@@ -43,12 +43,12 @@ void WorkerThread::run() {
             bool result = deconvolutionTool->doDeconvolution(inputImage, outputImage, blur);
             emit deconvolutionFinished(timer.elapsed());
             // if gray preivew is not canceled, start color preview
-            if (result && blur->mode != HIGH_QUALITY) {
-                blur->mode = PREVIEW_COLOR;
-                if (deconvolutionTool->doDeconvolution(inputImage, outputImage, blur)) {
-                    emit deconvolutionFinished(timer.elapsed());
-                }
-            }
+//            if (result && blur->mode != HIGH_QUALITY) {
+//                blur->mode = PREVIEW_COLOR;
+//                if (deconvolutionTool->doDeconvolution(inputImage, outputImage, blur)) {
+//                    emit deconvolutionFinished(timer.elapsed());
+//                }
+//            }
         }
 
         mutex->unlock();

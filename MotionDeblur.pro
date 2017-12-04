@@ -17,7 +17,6 @@ SOURCES += main.cpp\
     DeconvolutionTool.cpp \
     WorkerThread.cpp \
     ImageUtils.cpp \
-    MathUtlis.cpp \
 
 HEADERS  += MainWindow.h \
     FFTW/fftw3.h \
@@ -25,7 +24,6 @@ HEADERS  += MainWindow.h \
     WorkerThread.h \
     ImageUtils.h \
     Models/Blur.h \
-    MathUtlis.h \
     Models/ProcessingContext.h \
 
 FORMS    += MainWindow.ui

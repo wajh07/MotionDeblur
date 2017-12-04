@@ -216,7 +216,7 @@ void MainWindow::defectTypeChanged(int type) {
         ui->sliderPSNR->move( ui->sliderPSNR->x(), yFocus2);
     }
 
-    updateFullDeconvolution();
+//    updateFullDeconvolution();
 }
 
 void MainWindow::dragEnterEvent(QDragEnterEvent *event)
@@ -405,12 +405,12 @@ void MainWindow::createActions() {
     connect(ui->sliderMotionAngle, SIGNAL(valueChanged(int)), this, SLOT(motionAngleChanged()));
     connect(ui->sliderPSNR, SIGNAL(valueChanged(int)), this, SLOT(PSNRChanged()));
 
-    connect(ui->sliderRadius, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
-    connect(ui->sliderKernelFeather, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
-    connect(ui->sliderKernelStrength, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
-    connect(ui->sliderPSNR, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
-    connect(ui->sliderMotionLength, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
-    connect(ui->sliderMotionAngle, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
+//    connect(ui->sliderRadius, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
+//    connect(ui->sliderKernelFeather, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
+//    connect(ui->sliderKernelStrength, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
+//    connect(ui->sliderPSNR, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
+//    connect(ui->sliderMotionLength, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
+//    connect(ui->sliderMotionAngle, SIGNAL(sliderReleased()), this, SLOT(updateFullDeconvolution()));
 
     connect(ui->btnShowOriginal, SIGNAL(pressed()), this, SLOT(showOriginalPressed()));
     connect(ui->btnShowOriginal, SIGNAL(released()), this, SLOT(showOriginalReleased()));
